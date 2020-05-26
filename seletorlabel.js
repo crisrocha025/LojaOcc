@@ -5,6 +5,6 @@
       }
       Labell=[]
      for(l=0;l<20;l++){
-        const labbel = document.querySelector('.label-head'+l)
+        const labbel = document.querySelector('.labelName'+l)
         Labell.push(labbel)
      }
