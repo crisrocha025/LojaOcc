@@ -1,4 +1,4 @@
- function Incicio(){
+   function Incicio(){
       Items = []
     for(item=0;item<20;item++){
       var go = ':nth-child('+item+')'
@@ -15,7 +15,6 @@
         labelSelect(elLabel)
       }
     }
-    
  }
 
 function labelSelect(elemento){
@@ -27,10 +26,24 @@ function labelSelect(elemento){
     })
  function passaValor(ValorP){
    var valorProduto = document.querySelector('.valorp')
-   valorProduto.innerHTML = ValorP
+   
  }
   
 }
-
-
+var carrinho = document.querySelector('.carrinho')
+var btnComprar = document.querySelector('.btnComprar')
+var h=0
+    btnComprar.addEventListener('click',function(){
+      if(h==0){
+      var vProduto = document.querySelector('.valorp').innerHTML
+      var pValor = `<li>${vProduto}<span class="fecharValor" onclick="fecharValor()">  x</span></li>`
+      carrinho.innerHTML = carrinho.innerHTML + pValor
+      console.log(carrinho)
+      h++
+      }
+    })
+    function fecharValor(){
+      carrinho.innerHTML ='<h2>Produtos </h2>'
+      h=0
+    }
       window.load = Incicio()
