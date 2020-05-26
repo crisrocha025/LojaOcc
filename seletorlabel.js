@@ -1,4 +1,4 @@
-   function Incicio(){
+function Incicio(){
       Items = []
     for(item=0;item<20;item++){
       var go = ':nth-child('+item+')'
@@ -26,7 +26,7 @@ function labelSelect(elemento){
     })
  function passaValor(ValorP){
    var valorProduto = document.querySelector('.valorp')
-   
+   valorProduto.innerHTML = ValorP
  }
   
 }
