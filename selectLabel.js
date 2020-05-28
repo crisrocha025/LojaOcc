@@ -1,4 +1,5 @@
-       var labelName = document.querySelectorAll(`.labelName`)
+//create by Cris Rocha of www.ocodigocris.com
+  var labelName = document.querySelectorAll(`.labelName`)
         for (var j = 0; j < labelName.length; j++){
            var labelSelect = labelName[j].innerHTML.split('_')
            if(labelSelect[1]){
