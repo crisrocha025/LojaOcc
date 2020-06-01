@@ -1,4 +1,4 @@
-// botao criado exclusivamente para loja-ocodigocris.com
+// botao criado exclusivamente para loja-ocodigocris.com, created by Cris Rocha
         var valor = document.querySelector('.valor').innerHTML
         paypal.Buttons({
     createOrder: function(data, actions) {
