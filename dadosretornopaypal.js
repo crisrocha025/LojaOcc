@@ -1,4 +1,4 @@
-//created by Cris Rocha  - ocodigocris.com
+//created by Cris Rocha  - ocodigocris.com - to store loja.ocodigocris.com
 var downContinuo = document.querySelector('.downContinuo')  
      
      function createButtonOpenDown(){
