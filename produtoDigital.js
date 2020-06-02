@@ -7,3 +7,12 @@
            }
            console.log(labelSelect[1])
         }
+ var labelNameInicio = document.querySelectorAll(`.labelNameInicio`)
+  var valorProdutoDInicio = document.querySelector(`.valorInicio`)
+        for (var k = 0; k < labelNameInicio.length; k++){
+           var labelSelectI = labelNameInicio[k].innerHTML.split('_')
+           if(labelSelectI[1]){
+             valorProdutoDInicio.innerHTML = labelSelectI[1]
+           }
+           console.log(labelSelectI[1])
+        }
